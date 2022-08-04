@@ -1,0 +1,244 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.wrap {
+    font-size: 20px;
+    margin: 5px;
+    margin-top: 5px;
+}
+
+.logo {
+    width: 150px; 
+    margin-left: 10px;
+}
+
+.social {
+    width: 150px;
+    float: right;
+}
+
+.cover2 {
+    background-image: url(../img/cover2.jpg);
+    height: 450px;
+    text-align: center;
+    color: white;
+    padding-top: 170px;
+    font-size: 30px;
+    border: black solid 15px;
+/*    background-repeat: no-repeat;*/
+    background-position: center;
+	text-transform: uppercase;
+}
+
+header.main nav ul {
+    background-color: indianred;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 0; /* Eliminates spacing between inline-block elements */
+	text-align: center;
+}
+
+header.main nav li {
+	display: inline-block; /* This will change to display: block for media queries */
+}
+
+header.main nav li a {
+	display: block;
+	font-size: 16px;
+	padding: 20px;
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+}
+
+header.main nav li a:hover {
+	background-color: rgb(0,0,150);
+}
+
+/* MENU TOGGLE */
+.menu-toggle {
+	display: none;
+	text-align: center;
+}
+
+.menu-toggle a {
+	display: block;
+	font-size: 16px;
+	padding: 20px;
+	text-decoration: none;
+	color: white;
+	background-color: #000;
+}
+
+.menu-toggle a:hover {
+	background-color: #333;
+}
+
+/* MEDIA QUERY FOR MENU AND TOGGLE */
+@media (max-width: 800px) {
+	header.main nav ul {
+		display: none; /* Hide the main */
+	}
+	header.main nav li {
+		display: block; /* Stack the menu items */
+	}
+
+	/* Reveal the menu toggle */
+	.menu-toggle {
+		display: block;
+	}
+
+}
+
+.containter {
+    height: 1960px;
+    margin: 0 auto;
+}
+
+.protrait-pricing {
+    background-color: #58FF95;
+    color: mediumblue;
+    width: 100%;
+    height: 650px;
+    font-size: 20px;
+    text-align: center;
+    padding: 60px;
+}
+
+.family-pricing {
+    background-color: #1AB251;
+    color: mediumblue;
+    width: 100%;
+    height: 650px;
+    font-size: 20px;
+    text-align: center;
+    padding: 30px;
+}
+
+.pets {
+    background-color: #58FF95;
+    color: mediumblue;
+    width: 100%;
+    height: 350px;
+    font-size: 20px;
+    text-align: center;
+    padding: 30px;
+}
+
+.headshots {
+    background-color: #1AB251;
+    color: mediumblue;
+    width: 100%;
+    height: 310px;
+    font-size: 20px;
+    text-align: center;
+    padding: 30px;
+}
+
+footer.main {
+    background-color: aquamarine;
+}
+
+footer.main nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 0; /* Eliminates spacing between inline-block elements */
+	text-align: center;
+}
+
+footer.main nav ul li {
+    display: inline-block;    
+}
+
+footer.main nav ul li a {
+	display: block;
+	font-size: 12px;
+	padding: 10px;
+	text-decoration: none;
+    color: black;
+	text-transform: lowercase;
+}
+
+footer.main nav ul li a:hover {
+	background-color: white;
+}
+
+.copyright {
+    background-color: aquamarine;
+    text-align: center;
+    color: black;
+}
+
+
+
+
+/* MEDIA QUERY */
+@media (max-width: 780px) {
+
+    .protrait-pricing {
+        background-color: #58FF95;
+        color: mediumblue;
+        width: 100%;
+        float: left;
+        font-size: 20px;
+        text-align: center;
+        padding: 60px;
+    }
+
+    .family-pricing {
+        background-color: #1AB251;
+        color: mediumblue;
+        width: 100%;
+        height: 650px;
+        font-size: 20px;
+        text-align: center;
+        padding: 30px;
+        float: left;
+    }
+
+    .pets {
+        background-color: #58FF95;
+        color: mediumblue;
+        width: 100%;
+        height: 350px;
+        font-size: 20px;
+        text-align: center;
+        padding: 30px;
+         float: left;
+   }
+
+    .headshots {
+        background-color: #1AB251;
+        color: mediumblue;
+        width: 100%;
+        height: 310px;
+        font-size: 20px;
+        text-align: center;
+        padding: 30px;
+        float: left;
+}
+    
+    footer.main {
+        background-color: aquamarine;
+    }
+
+    .copyright {
+        background-color: aquamarine;
+        height: 33px;
+        text-align: center;
+        color: black;
+    }
+
+
+
+    
+}

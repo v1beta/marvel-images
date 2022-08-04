@@ -1,0 +1,239 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.wrap {
+    font-size: 20px;
+    margin: 5px;
+    margin-top: 5px;
+}
+
+.logo {
+    width: 150px; 
+    margin-left: 10px;
+}
+
+.social {
+    width: 150px;
+    float: right;
+}
+
+.cover1 {
+    background-image: url(../img/cover1.jpg);
+    height: 450px;
+    text-align: center;
+    color: white;
+    padding-top: 170px;
+    font-size: 30px;
+    border: black solid 15px;
+/*    background-repeat: no-repeat;*/
+    background-position: center;
+	text-transform: uppercase;
+}
+
+header.main nav ul {
+    background-color: indianred;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 0; /* Eliminates spacing between inline-block elements */
+	text-align: center;
+}
+
+header.main nav li {
+	display: inline-block; /* This will change to display: block for media queries */
+}
+
+header.main nav li a {
+	display: block;
+	font-size: 16px;
+	padding: 20px;
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+}
+
+header.main nav li a:hover {
+	background-color: rgb(0,0,150);
+}
+
+/* MENU TOGGLE */
+.menu-toggle {
+	display: none;
+	text-align: center;
+}
+
+.menu-toggle a {
+	display: block;
+	font-size: 16px;
+	padding: 20px;
+	text-decoration: none;
+	color: white;
+	background-color: #000;
+}
+
+.menu-toggle a:hover {
+	background-color: #333;
+}
+
+/* MEDIA QUERY FOR MENU AND TOGGLE */
+@media (max-width: 800px) {
+	header.main nav ul {
+		display: none; /* Hide the main */
+	}
+	header.main nav li {
+		display: block; /* Stack the menu items */
+	}
+
+	/* Reveal the menu toggle */
+	.menu-toggle {
+		display: block;
+	}
+
+}
+
+.container {
+    width: 100%;
+    height: 666px;
+    margin: 0 auto;
+    overflow: auto;
+/*    padding: 10px;*/
+}
+
+.container div {
+    width: 33.3333%;
+    float: left;
+}
+
+.red {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    width: 250px;
+    height: 333px;
+    background-color: red;
+    background-image: url(../img/nature.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 332px;
+}
+
+.green {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    width: 250px;
+    height: 333px;
+    background-color: green;    
+    background-repeat: no-repeat;
+    background-size: 100% 333px;}
+
+.blue {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    width: 250px;
+    height: 333px;
+    background-color: blue;
+    background-image: url(../img/blackandwhite.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 333px;}
+
+.yellow {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    width: 250px;
+    height: 333px;
+    background-color: yellow;
+    background-repeat: no-repeat;
+    background-size: 100% 333px;}
+
+.purple {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    width: 250px;
+    height: 333px;
+    background-color: purple;    
+    background-image: url(../img/dog.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 333px;}
+
+.orange {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    width: 250px;
+    height: 333px;
+    background-color: orange;
+    background-repeat: no-repeat;
+    background-size: 100% 333px;}
+
+footer.main {
+    background-color: aquamarine;
+}
+
+footer.main nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 0; /* Eliminates spacing between inline-block elements */
+	text-align: center;
+}
+
+footer.main nav ul li {
+    display: inline-block;    
+}
+
+footer.main nav ul li a {
+	display: block;
+	font-size: 12px;
+	padding: 10px;
+	text-decoration: none;
+    color: black;
+	text-transform: lowercase;
+}
+
+footer.main nav ul li a:hover {
+	background-color: white;
+}
+
+.copyright {
+    background-color: aquamarine;
+    text-align: center;
+    color: black;
+}
+
+
+
+
+
+/* MEDIA QUERY */
+@media (max-width: 680px) {
+    .hero {
+    background-color: lightgray;
+    height: 360px;
+    margin: 0 auto;
+    }
+    
+    .container {
+    width: 100%;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 10px;
+    }
+
+  .container div {
+    float: none;
+    width: 100%;
+  } 
+
+    
+    
+}
